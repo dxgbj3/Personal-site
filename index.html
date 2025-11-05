@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <img src="avatar.jpg" alt="Avatar" class="avatar">
+        <h1>Daler</h1>
+        <p>@dxgbj3 - Online</p>
+    </header>
+    <main>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Hey, I'm Daler, I code because breaking things and fixing them feels like a superpower - mostly Python and C++, with a touch of JavaScript when I need it.
+                <br><br>
+                I'm obsessed with music that actualy moves: Japanese jazz, funk, soul, psyhedelic, and indie are my go-tos. It's the kind of stuff that stucks in your head, not just background noise.
+                <br><br>
+                I've made a small site about myself - nothing flashy, just a way to show that I care about. I also love riding my <a href="https://www.google.com/search?q=What+is+an+electric+unicycle">EUC</a> and exploring the mountains. Every weekend, I usually head somewhere far off, chasing trails and carving paths no one else bothers to take.
+                <br><br>
+                I'm always chasig the thrill, whether it's a high-speed ride, a tricky coding problem, or discovering something new that makes life feel alive.
+
+            </p>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="photos">
+                <img src="pictures/picture1.jpg" alt="Photo 1">
+                <img src="pictures/picture2.jpg" alt="Photo 2">
+                <img src="pictures/picture3.jpg" alt="Photo 3">
+            </div>
+        </section>
+        <section class="music">
+            <h2>My saved tracks</h2>
+            <div class="track"
+                data-artist="Casiopea"
+                data-title="Time Limit"
+                data-desc="A vibrant fusion of jazz and funk, 'Time Limit' pulses with energetic rhythms and intricate melodies that captivate the listener from start to finish.">
+                <p><b>Casiopea - Time Limit</b></p>
+                <audio controls>
+                    <source src="music/Time-Limit.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="track" 
+                data-artist="Earth, Wind & Fire" 
+                data-title="Can't Let Go" 
+                data-desc="A classic soulful track from the legendary band.">
+            <p><b>Earth, Wind & Fire - Can't Let Go</b></p>
+            <audio controls>
+                <source src="music/Can't-Let-Go.mp3" type="audio/mpeg">
+            </audio>
+            </div>
+            <div class="track"
+                data-artist="Radiohead"
+                data-title="Sail To The Moon"
+                data-desc="Its shifting rhythm hides a secret unease, like the sky trembling before it breaks into silence.">
+                <p><b>Radiohead - Sail To The Moon</b></p>
+                <audio controls>
+                    <source src="music/Sail-To-The-Moon.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="track"
+                data-artist="Panchiko"
+                data-title="D>E>A>T>H>M>E>T>A>L"
+                data-desc="Its lo-fi haze wraps around a pulse that’s both nostalgic and restless, a ghost of youth humming through distortion and heartbreak.">
+                <p><b>Panchiko - D>E>A>T>H>M>E>T>A>L</b></p>
+                <audio controls>
+                    <source src="music/Deathmetal.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="track"
+                data-artist="Tame Impala"
+                data-title="Breathe Deeper"
+                data-desc="Funky, hypnotic, and soaked in psychedelia. It glides from smooth groove to cosmic drift, turning self-discovery into something you can dance to.">
+                <p><b>Tame Impala - Breathe Deeper</b></p>
+                <audio controls>
+                    <source src="music/Breathe-Deeper.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div id="track-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-desc"></p>
+                </div>
+            </div>
+            <br>
+            <canvas id="visualizer"></canvas>
+            
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 My Profile</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
